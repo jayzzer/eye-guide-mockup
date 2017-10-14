@@ -73,10 +73,40 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
+#content-sidebar {
+    padding: 0;
+    font-family: Roboto;
+}
+
+.info-block {
+    padding: 40px;
+    color: #000;
+}
+
+.info-block i {
+    margin-right: 10px;
+}
+
+.info-block:nth-of-type(2n-1) {
+    background-color: #eaffea;
+}
+
+.info-block .title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.info-block .descr {
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
 #footer ul {
     margin: 0;
     padding: 0;
 }
+
 #footer li {
     display: inline;
 }
