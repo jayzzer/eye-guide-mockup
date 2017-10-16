@@ -8,6 +8,32 @@ a:hover, a:focus {
     color: inherit;
 }
 
+body {
+    margin-top: 80px;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+
+.navbar-header {
+    height: 80px;
+}
+
+.navbar-header > button {
+    margin-top: 23px;
+}
+
+.navbar-brand { 
+    padding: 0;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: 80px;
+}
+
+
 #map-sidebar {
     display: table;
     table-layout: fixed;
@@ -149,6 +175,17 @@ a:hover, a:focus {
 .footer-rights {
     margin-bottom: 0;
     color: #888;
+}
+
+@media (max-width: 768px) {
+    .navbar-fixed-top {
+        position: relative;
+        margin: 0;
+    }
+
+    body {
+        margin: 0;
+    }
 }
 
 @media (min-width: 992px) {
