@@ -14,6 +14,28 @@ body {
 
 .navbar-default {
     background-color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: #2ecc71;
+}
+
+.navbar-nav {
+    margin-top: 15px;
+}
+
+.navbar-right {
+    margin: 22px 15px 0 0;
 }
 
 .navbar-header {
@@ -31,6 +53,20 @@ body {
 .navbar-brand img {
     width: 80px;
     height: 80px;
+}
+
+#nav-sign-in {
+    padding: 8px 20px;
+
+    color: #2ecc71;
+    border: 1px solid #2ecc71;
+    border-radius: 20px;
+}
+
+#nav-sign-in:hover,
+#nav-sign-in:focus {
+    color: #fff;
+    background-color: #2ecc71;
 }
 
 
@@ -103,6 +139,12 @@ body {
     background-color: #2ecc71;
     border: none;
     border-radius: 0 5px 5px 0;
+    transition: background-color 0.2s ease-in;
+}
+
+.search-submit:hover,
+.search-submit:focus {
+    background-color: #0caa50;
 }
 
 #content-sidebar {
@@ -150,6 +192,8 @@ body {
     line-height: 35px;
     border: 2px solid #000;
     border-radius: 50%;
+
+    transition: all 0.2s ease-in;
 }
 
 .footer-social .facebook {
@@ -157,9 +201,21 @@ body {
     border-color: #3b5998;
 }
 
+.footer-social .facebook:hover,
+.footer-social .facebook:focus {
+    color: #fff;
+    background-color: #3b5998;
+}
+
 .footer-social .vk {
     color: #507299;
     border-color: #6183aa;
+}
+
+.footer-social .vk:hover,
+.footer-social .vk:focus {
+    color: #fff;
+    background-color: #6183aa;
 }
 
 .footer-social .instagram {
@@ -167,9 +223,23 @@ body {
     border-color: #c0392b;
 }
 
-.footer-contacts, .footer-help {
+.footer-social .instagram:hover,
+.footer-social .instagram:focus {
+    color: #fff;
+    background-color: #c0392b;
+}
+
+.footer-contacts,
+.footer-help {
     line-height: 40px;
     font-size: 1.6rem;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus,
+.footer-help a:hover,
+.footer-help a:focus {
+    color: #000;
 }
 
 .footer-rights {
@@ -177,7 +247,7 @@ body {
     color: #888;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-fixed-top {
         position: relative;
         margin: 0;
@@ -185,6 +255,24 @@ body {
 
     body {
         margin: 0;
+    }
+
+    .navbar-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    #nav-sign-in {
+        color: #000;
+        padding: 10px 0;
+        border: none;
+        border-radius: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #nav-sign-in:hover, #nav-sign-in:focus {
+        color: #2ecc71;
+        background-color: #fff;
     }
 }
 
