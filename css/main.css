@@ -128,13 +128,20 @@ body {
     margin-top: 20px;
 }
 
+.search-form.bottom {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    left: 0;
+}
+
 .search-input {
-    padding: 10px 10px;
+    padding: 9px 10px;
     width: 50%;
     min-width: 210px;
 
     color: #000;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     margin-right: -5px;
 }
@@ -169,7 +176,7 @@ body {
     margin-right: 10px;
 }
 
-.info-block:nth-of-type(2n-1) {
+.info-block:nth-of-type(2n) {
     background-color: #eaffea;
 }
 
@@ -182,6 +189,32 @@ body {
 .info-block .descr {
     line-height: 1.5em;
     font-size: 1.2em;
+}
+
+#guides {
+    padding: 40px;
+}
+
+#guides .title {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+.guide {
+    height: 150px;
+    margin: 0 auto 40px auto;
+}
+
+.guide-img {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.guide-name {
+    margin: 0;
 }
 
 #footer {

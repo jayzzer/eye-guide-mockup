@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -45,12 +45,14 @@
             <div id="map-sidebar" class="col-md-6 col-sm-12 col-xs-12">
                 <div class="fade"></div>
                 <div class="left-s__content vcenter">
-                    <h1 class="intro-title">Быстрый поиск гида</h1>
-                    <p class="intro-subtitle">
-                        Хотите посетить экскурсию, но не знаете как выбрать гида? <br>
-                        Наш сервис поможет вам в этом!
-                    </p>
-
+                    <div class="left-s__text">
+                        <h1 class="intro-title">Быстрый поиск гида</h1>
+                        <p class="intro-subtitle">
+                            Хотите посетить экскурсию, но не знаете как выбрать гида? <br>
+                            Наш сервис поможет вам в этом!
+                        </p>
+                    </div>
+                    
                     <div class="search-form">
                         <input class="search-input" type="text" placeholder="Например: Москва, парк Зарядье">
                         <button class="search-submit">Найти</button>
@@ -59,6 +61,45 @@
             </div>
 
             <div id="content-sidebar" class="col-md-offset-6 col-md-6 col-sm-12 col-xs-12">
+                <div id="guides" class="hidden">
+                    <h2 class="title">Здесь проводят экскурсии:</h2>
+                    <div class="guide row">
+                        <div style="background-image: url('img/746.jpg')" class="guide-img col-md-3 col-sm-4 col-xs-4"></div>
+                        <div class="guide-stats col-md-9 col-sm-8 col-xs-8">
+                            <h3 class="guide-name">Игорь</h3>
+                            <p class="guide-stats">
+                                120 часов экскурсии <br>
+                                83 проведённых экскурсии <br>
+                                12 счастливых туристов
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide row">
+                        <div style="background-image: url('img/4066.png')" class="guide-img col-md-3 col-sm-4 col-xs-4"></div>
+                        <div class="guide-stats col-md-9 col-sm-8 col-xs-8">
+                            <h3 class="guide-name">Наталья</h3>
+                            <p class="guide-stats">
+                                230 часов экскурсии <br>
+                                122 проведённых экскурсии <br>
+                                87 счастливых туристов
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="guide row">
+                        <div style="background-image: url('img/6053.jpg')" class="guide-img col-md-3 col-sm-4 col-xs-4"></div>
+                        <div class="guide-stats col-md-9 col-sm-8 col-xs-8">
+                            <h3 class="guide-name">Алла</h3>
+                            <p class="guide-stats">
+                                100 часов экскурсии <br>
+                                60 проведённых экскурсии <br>
+                                20 счастливых туристов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="about" class="info-block">
                     <h2 class="title"><i class="fa fa-eye"></i>Что такое EyeGuide?</h2>
                     <p class="descr">EyeGuide — это сервис по поиску гидов-экскурсоводов. Как правило, это частные гиды, которые работают на себя или стараются взять на себя дополнительную нагрузку, постоянно работая в музеях или экскурсионных бюро.</p>
