@@ -69,6 +69,14 @@ body {
     background-color: #2ecc71;
 }
 
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
 
 #map-sidebar {
     display: table;
