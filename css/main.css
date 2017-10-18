@@ -194,6 +194,10 @@ body {
     font-size: 1.2em;
 }
 
+.info-block a {
+    color: #0caa50;
+}
+
 #guides {
     padding: 40px;
 }
