@@ -234,7 +234,7 @@ body {
     padding: 35px 40px;
     margin: 0 auto;
     
-    border: 1px solid #2ecc71;
+    border-top: 1px solid #2ecc71;
 }
 
 .footer-social {
