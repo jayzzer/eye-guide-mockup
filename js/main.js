@@ -6,14 +6,18 @@ menuBtn.onclick = function () {
 }
 
 var mapSidebar = document.getElementById('map-sidebar');
-var guides = document.getElementById('guides');
 var fade = mapSidebar.querySelector('.fade');
+
 var searchBtn = document.querySelector('.search-submit');
 var introText = document.querySelector('.left-s__text');
 var searchForm = searchBtn.parentNode;
 var searchClasses = searchForm.className;
 var textClasses = introText.className;
-searchBtn.onclick = function () {
+
+var guides = document.getElementById('guides');
+searchBtn.onclick = onSearchBtnClick;
+
+function onSearchBtnClick () {
     searchForm.className = searchClasses + ' bottom';
     introText.className = textClasses + ' hidden';
     guides.classList.remove('hidden');

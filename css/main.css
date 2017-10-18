@@ -3,15 +3,13 @@ a {
     color: inherit;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    color: inherit;
-}
-
 body {
     margin-top: 80px;
 }
 
+/* ========================================================================== */
+/* Navbar */
+/* ========================================================================== */
 .navbar-default {
     background-color: #fff;
     font-family: Roboto;
@@ -77,7 +75,9 @@ body {
     display: block;
 }
 
-
+/* ========================================================================== */
+/* Left-sidebar */
+/* ========================================================================== */
 #map-sidebar {
     display: table;
     table-layout: fixed;
@@ -162,6 +162,9 @@ body {
     background-color: #0caa50;
 }
 
+/* ========================================================================== */
+/* Right-sidebar */
+/* ========================================================================== */
 #content-sidebar {
     padding: 0;
     font-family: Roboto;
@@ -196,7 +199,7 @@ body {
 }
 
 #guides .title {
-    margin: 0 0 20px 0;
+    margin: 0 0 45px 0;
     font-weight: 500;
     font-size: 1.7em;
 }
@@ -211,12 +214,18 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    box-shadow: 0px 0px 6px 1px #2ecc71;
+    border-radius: 10px;
 }
 
 .guide-name {
     margin: 0;
 }
 
+/* ========================================================================== */
+/* Footer */
+/* ========================================================================== */
 #footer {
     margin: 35px 40px;
 }
@@ -288,6 +297,10 @@ body {
     color: #888;
 }
 
+
+/* ========================================================================== */
+/* Media queries */
+/* ========================================================================== */
 @media (max-width: 767px) {
     .navbar-fixed-top {
         position: relative;
